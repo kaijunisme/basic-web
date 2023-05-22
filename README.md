@@ -59,11 +59,11 @@
 |-------------| ------ |----------| ------ |
 | ID          | String | 流水號 |
 | NAME        | String | 名稱 |
-| PRICT       | String | 售價 |
-| AMOUNT      | String | 數量 |
-| STATUS      | String | 狀態 |
-| CREATE_TIME | Date   | 建立時間 |
-| UPDATE_TIME | Date   | 更新時間 |
+| PRICT       | INT | 售價 |
+| AMOUNT      | INT | 數量 |
+| STATUS      | String | 狀態 | 
+| CREATE_TIME | Date   | 建立時間 | yyyy/MM/dd HH:mm |
+| UPDATE_TIME | Date   | 更新時間 | yyyy/MM/dd HH:mm |
 
 > #### 2. API_LOG (API紀錄檔)
 
@@ -74,7 +74,7 @@
 | RESPONSE    | String | 回覆本文 |
 | RETURN_CODE | String | 回覆代碼 |
 | RETURN_MSG  | String | 回覆訊息 |
-| CREATE_TIME | Date   | 建立時間 |
+| CREATE_TIME | Date   | 建立時間 | yyyy/MM/dd HH:mm |
 
 ### API 規格
 
@@ -124,7 +124,7 @@
 | --------------- | ------- |
 | **URL**         | /api/log |
 | **HTTP Method** | GET |
-| **Desc**        | 查詢API_LOG 或EXT_LOG 資料 |
+| **Desc**        | 查詢API_LOG 資料 |
 
 ### 知識點
 
@@ -162,9 +162,9 @@
 |-------------| ------ |----------| ------ |
 | USERNAME    | String | 帳號 |
 | P_CODE      | String | 密碼 |
-| STATUS      | String | 狀態 |
-| CREATE_TIME | Date   | 建立時間 |
-| UPDATE_TIME | Date   | 更新時間 |
+| STATUS      | String | 狀態 | Y: 已啟用<br>N: 未啟用 |
+| CREATE_TIME | Date   | 建立時間 | yyyy/MM/dd HH:mm |
+| UPDATE_TIME | Date   | 更新時間 | yyyy/MM/dd HH:mm |
 
 > #### 2. USER_ROLE (使用者角色檔)
 
@@ -172,7 +172,7 @@
 |-------------| ------ |----------| ------ |
 | USERNAME    | String | 使用者帳號 |
 | ROLE        | String | 角色 |
-| CREATE_TIME | Date   | 建立時間 |
+| CREATE_TIME | Date   | 建立時間 | yyyy/MM/dd HH:mm |
 
 > #### 3. USER_INFO (使用者基本資料檔)
 
@@ -182,8 +182,8 @@
 | NAME        | String | 名稱 |
 | EMAIL       | String | 信箱 |
 | PHONE       | String | 電話 |
-| CREATE_TIME | Date   | 建立時間 |
-| UPDATE_TIME | Date   | 更新時間 |
+| CREATE_TIME | Date   | 建立時間 | yyyy/MM/dd HH:mm |
+| UPDATE_TIME | Date   | 更新時間 | yyyy/MM/dd HH:mm |
 
 ### API 規格
 
